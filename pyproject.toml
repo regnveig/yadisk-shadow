@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "yadisk-shadow"
+version = "0.9.0"
+authors = [
+	{ name = "Emil Viesná", email="regnveig@yandex.ru" }
+]
+description = "Yandex Disk Shared Folders Metadata & Files Downloader"
+keywords = ["yandex", "disk", "downloader", "shared"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">= 3.8"
+dependencies = [
+	"requests",
+	"tqdm"
+]
+classifiers = [
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Operating System :: OS Independent",
+	"Natural Language :: English",
+	"Development Status :: 2 - Pre-Alpha",
+	"Environment :: Console"
+]
+
+[project.scripts]
+yadisk-shadow = "yadisk_shadow.yadisk_shadow:main"
+
+[project.urls]
+"Homepage" = "https://github.com/regnveig/yadisk-shadow"
+"Bug Tracker" = "https://github.com/regnveig/yadisk-shadow/issues"
